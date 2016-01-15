@@ -1,0 +1,17 @@
+{
+    "description": "A section heading to sit between the Financial Times header and the page content, indicating a section",
+    "origamiType": "module",
+    "origamiVersion": 1,
+    "support": "https://github.com/Financial-Times/o-section-head/issues",
+    "supportStatus": "active",
+    "demosDefaults": {
+      "sass": "demos/src/main.scss"
+    },
+    "demos": [
+      {
+        "name": "standard",
+        "description": "Standard section head",
+        "template": "demos/src/main.mustache"
+      }
+    ]
+}

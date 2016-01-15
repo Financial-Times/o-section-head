@@ -1,0 +1,83 @@
+@import "o-grid/main";
+@import "o-colors/main";
+@import "o-ft-icons/main";
+
+$o-typography-is-silent: false;
+@import "o-typography/main";
+
+$o-fonts-is-silent: false;
+@include oFontsInclude(MetricWeb, $weight: regular);
+@include oFontsInclude(MetricWeb, $weight: bold);
+
+
+@import "src/scss/color-use-cases";
+@import "src/scss/variables";
+@import "src/scss/mixins";
+@import "src/scss/standard";
+
+
+.o-section-head {
+  @include oGridContainer();
+  @include oColorsFor(o-section-head);
+}
+
+.o-section-head__inner {
+  @include oGridRow();
+}
+
+.o-section-head__title-container,
+.o-section-head__related-item-container {
+  @include oGridColspan((default: 12, S: 12, M: 6));
+}
+
+.o-section-head__title {
+  @include oTypographySans(xl);
+}
+
+.o-section-head__related-item-container aside {
+
+}
+
+.o-section-head__related-item-title {
+  @include oTypographySans(s);
+  text-transform: uppercase;
+  margin: 8px 0 14px;
+  padding: 0 0 2px;
+}
+
+.o-section-head ol {
+  @include oGridRow();
+  margin: 0;
+  padding: 0;
+}
+
+.o-section-head__related-item {
+  @include oTypographySansBold(s);
+  @include oGridColspan((default: 12, S: 12, M: 12, L: 6));
+
+  @include oGridRespondTo($until: M) {
+    padding-left: 0px !important;
+  }
+
+  a {
+    @include oColorsFor(o-section-head__related-item, text);
+    padding: 2px 8px;
+    display:block;
+    text-decoration: none;
+    border-bottom: 1px solid rgba(0,0,0,.25);
+
+    // Older browsers: PNG fallback (resized to 100px wide)
+    background-image: url('//image.webservices.ft.com/v1/images/raw/fticon:arrow-right?width=10&format=png&source=o-section-head');
+
+    // Modern browsers: SVG covering the whole size of the element
+    // we declare mutliple backgrounds so that only modern browsers read this property
+    background-image: url('http://image.webservices.ft.com/v1/images/raw/fticon:arrow-right?format=svg&source=o-section-head&tint=%23cec6b9,%23cec6b9'), none;
+    background-size: 10px;
+    background-position: right;
+    background-repeat: no-repeat;
+  }
+
+  a:hover {
+    @include oColorsFor(o-section-head__related-item--hover);
+  }
+}

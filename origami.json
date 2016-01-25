@@ -5,8 +5,7 @@
     "support": "https://github.com/Financial-Times/o-section-head/issues",
     "supportStatus": "active",
     "demosDefaults": {
-      "sass": "demos/src/main.scss",
-      "js": "demos/src/main.js"
+      "sass": "demos/src/main.scss"
     },
     "demos": [
       {

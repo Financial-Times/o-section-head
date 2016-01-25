@@ -1,1 +1,6 @@
+@include oColorsSetUseCase(o-section-head__related-item, text, 'claret');
+@include oColorsSetUseCase(o-section-head__related-item--hover, text, 'cold-3');
+@include oColorsSetUseCase(o-section-head__related-item--hover, background, 'pink-tint1');
+
+@include oColorsSetUseCase(o-section-head, background, 'pink');
 @include oColorsSetUseCase(o-section-head, text, 'grey-tint5');

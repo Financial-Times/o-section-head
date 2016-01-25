@@ -5,8 +5,9 @@
     "o-typography": "^3.0.0",
     "o-grid": "^4.0.0",
 		"o-fonts": "^1.0.0",
-		"o-ft-icons": "^3.0.0"
-
+		"o-ft-icons": "^3.0.0",
+		"o-expander": "^2.0.0",
+		"o-link-list": "^1.0.0-beta-1"
 	},
   "main": [
    "main.scss",

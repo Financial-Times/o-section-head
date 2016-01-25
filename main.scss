@@ -1,6 +1,7 @@
 @import "o-grid/main";
 @import "o-colors/main";
 @import "o-ft-icons/main";
+@import "o-expander/main";
 
 $o-typography-is-silent: false;
 @import "o-typography/main";
@@ -34,8 +35,14 @@ $o-fonts-is-silent: false;
   @include oTypographySans(xl);
 }
 
-.o-section-head__related-item-container aside {
-
+.o-section-head__related-item-title-toggler {
+  @include oTypographySans(s);
+  width: 100%;
+  display:block;
+  text-align: left;
+  &:hover {
+    @include oColorsFor(o-section-head__related-item--hover);
+  }
 }
 
 .o-section-head__related-item-title {
@@ -80,4 +87,12 @@ $o-fonts-is-silent: false;
   a:hover {
     @include oColorsFor(o-section-head__related-item--hover);
   }
+}
+
+
+@include oGridRespondTo($until: M) {
+  .o-section-head__related-items {
+    max-height:0;
+  }
+
 }

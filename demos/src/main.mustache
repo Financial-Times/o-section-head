@@ -1,21 +1,26 @@
 <div class="o-section-head" data-o-component="o-section-head">
 	<div class="o-section-head__inner">
 		<div class="o-section-head__title-container">
-			<div class="o-section-head__title">Section title</div> <!-- maybe this should be a heading?-->
+			<h1 class="o-section-head__title">Section title</h1> <!-- maybe this should be a heading?-->
 		</div>
-	  <div class="o-section-head__related-item-container">
-	    <aside> <!-- maybe this should be a nav?-->
-	      <div class='o-section-head__related-item-title'>related</div> <!-- what should this be?-->
-	      <ol><!-- maybe this should be a ul?-->
-	        <li class="o-section-head__related-item"><a href='#'>item 1</a></li>
-	        <li class="o-section-head__related-item"><a href='#'>item 2</a></li>
-	        <li class="o-section-head__related-item"><a href='#'>item 3</a></li>
-	        <li class="o-section-head__related-item"><a href='#'>item 4</a></li>
-	        <li class="o-section-head__related-item"><a href='#'>item 5</a></li>
-	        <li class="o-section-head__related-item"><a href='#'>item 6</a></li>
-	        <li class="o-section-head__related-item"><a href='#'>item 7</a></li>
-	      </ol>
-	    </aside>
+	  <div class="o-section-head__related-item-container o-expander"
+				data-o-expander-collapsed-toggle-text="RELATED"
+				data-o-expander-expanded-toggle-text="RELATED"
+				data-o-expander-shrink-to="height"
+				data-o-component="o-expander" >
+				<button class="o-expander__toggle o--if-js o-section-head__related-item-title-toggler">RELATED</button>
+				<div class="o-section-head__related-items o-expander__content">
+					<ol>
+		        <li class="o-section-head__related-item"><a href='#'>item 1</a></li>
+		        <li class="o-section-head__related-item"><a href='#'>item 2</a></li>
+		        <li class="o-section-head__related-item"><a href='#'>item 3</a></li>
+		        <li class="o-section-head__related-item"><a href='#'>item 4</a></li>
+		        <li class="o-section-head__related-item"><a href='#'>item 5</a></li>
+		        <li class="o-section-head__related-item"><a href='#'>item 6</a></li>
+		        <li class="o-section-head__related-item"><a href='#'>item 7</a></li>
+					</ol>
+				</div>
+	    </div>
 	  </div>
 	</div>
 </div>

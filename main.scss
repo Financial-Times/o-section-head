@@ -56,9 +56,15 @@
   break-inside: avoid;
 }
 
+/* If JS hasn't loaded, never show the toggler */
+.core .o-section-head__nav-item-toggler {
+  display: none;
+}
+
 @include oGridRespondTo($until: M) {
-  .o-section-head__nav-item-list {
-    max-height:0;
+  /* If JS has loaded, set a max-height for o-expandable */
+  .enhanced .o-section-head__nav-item-list {
+    max-height: 0;
   }
 }
 

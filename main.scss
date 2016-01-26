@@ -2,19 +2,12 @@
 @import "o-colors/main";
 @import "o-expander/main";
 @import "o-link-list/main";
-
-$o-typography-is-silent: false;
 @import "o-typography/main";
 
-$o-fonts-is-silent: false;
-@include oFontsInclude(MetricWeb, $weight: regular);
+@include oFontsInclude(MetricWeb, $weight: light);
 @include oFontsInclude(MetricWeb, $weight: bold);
 
-
 @import "src/scss/color-use-cases";
-@import "src/scss/variables";
-@import "src/scss/mixins";
-@import "src/scss/standard";
 
 
 .o-section-head {
@@ -54,14 +47,12 @@ $o-fonts-is-silent: false;
   }
 }
 
-
 .o-section-head__related-item {
   @include oLinkListItem();
   -webkit-column-break-inside: avoid;
   page-break-inside: avoid;
   break-inside: avoid;
 }
-
 
 @include oGridRespondTo($until: M) {
   .o-section-head__related-items {

@@ -4,6 +4,9 @@
     "origamiVersion": 1,
     "support": "https://github.com/Financial-Times/o-section-head/issues",
     "supportStatus": "active",
+    "ci": {
+      "travis": "https://api.travis-ci.org/repos/Financial-Times/o-section-head/builds.json"
+    },
     "demosDefaults": {
       "sass": "demos/src/main.scss",
       "js": "demos/src/main.js"

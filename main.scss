@@ -19,7 +19,7 @@
   @include oGridRow();
 }
 
-.o-section-head__title-container{
+.o-section-head__title-container {
   @include oGridColspan((default: 12, S: 12, M: 7));
 }
 .o-section-head__nav-item-container {
@@ -42,7 +42,7 @@
 .o-section-head__nav-item-toggler {
   @include oTypographySans(s);
   width: 100%;
-  display:block;
+  display: block;
   text-align: left;
   &:hover {
     @include oColorsFor(o-section-head__nav-item--hover);

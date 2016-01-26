@@ -19,9 +19,11 @@
   @include oGridRow();
 }
 
-.o-section-head__title-container,
+.o-section-head__title-container{
+  @include oGridColspan((default: 12, S: 12, M: 7));
+}
 .o-section-head__nav-item-container {
-  @include oGridColspan((default: 12, S: 12, M: 6));
+  @include oGridColspan((default: 12, S: 12, M: 5));
 }
 
 .o-section-head__title {
@@ -58,6 +60,9 @@
   .o-section-head__nav-item-list {
     max-height:0;
   }
+}
+
+@include oGridRespondTo($until: XL) {
   .o-section-head__nav-item-container {
     -webkit-column-count: 1;
     column-count: 1;

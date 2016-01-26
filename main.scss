@@ -20,7 +20,7 @@
 }
 
 .o-section-head__title-container,
-.o-section-head__related-item-container {
+.o-section-head__nav-item-container {
   @include oGridColspan((default: 12, S: 12, M: 6));
 }
 
@@ -28,26 +28,26 @@
   @include oTypographySans(xl);
 }
 
-.o-section-head__related-item-container {
+.o-section-head__nav-item-container {
   -webkit-column-count: 2;
   column-count: 2;
 }
 
-.o-section-head__related-items {
+.o-section-head__nav-item-list {
   @include oLinkListItemContainer;
 }
 
-.o-section-head__related-item-title-toggler {
+.o-section-head__nav-item-toggler {
   @include oTypographySans(s);
   width: 100%;
   display:block;
   text-align: left;
   &:hover {
-    @include oColorsFor(o-section-head__related-item--hover);
+    @include oColorsFor(o-section-head__nav-item--hover);
   }
 }
 
-.o-section-head__related-item {
+.o-section-head__nav-item {
   @include oLinkListItem();
   -webkit-column-break-inside: avoid;
   page-break-inside: avoid;
@@ -55,10 +55,10 @@
 }
 
 @include oGridRespondTo($until: M) {
-  .o-section-head__related-items {
+  .o-section-head__nav-item-list {
     max-height:0;
   }
-  .o-section-head__related-item-container {
+  .o-section-head__nav-item-container {
     -webkit-column-count: 1;
     column-count: 1;
   }

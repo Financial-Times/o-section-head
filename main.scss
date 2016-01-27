@@ -7,11 +7,14 @@
 
 
 .o-section-head {
-  @include oGridContainer();
   @include oColorsFor(o-section-head);
 }
 
 .o-section-head__inner {
+  @include oGridContainer();
+}
+
+.o-section-head__container {
   @include oGridRow();
 }
 

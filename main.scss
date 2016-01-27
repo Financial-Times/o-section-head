@@ -31,7 +31,6 @@
 }
 
 .o-section-head__nav-item-container {
-  -webkit-column-count: 2;
   column-count: 2;
 }
 
@@ -51,7 +50,6 @@
 
 .o-section-head__nav-item {
   @include oLinkListItem();
-  -webkit-column-break-inside: avoid;
   page-break-inside: avoid;
   break-inside: avoid;
 }
@@ -70,7 +68,6 @@
 
 @include oGridRespondTo($until: XL) {
   .o-section-head__nav-item-container {
-    -webkit-column-count: 1;
     column-count: 1;
   }
 }

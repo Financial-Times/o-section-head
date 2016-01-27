@@ -1,3 +1,25 @@
-$o-section-head-is-silent: false;
-
 @import '../../main';
+
+.o-section-head__title {
+  /* Equivalent o-typography mixin is: oTypographySans(xl); */
+  font-size: 40px;
+  line-height: 40px;
+  font-family: MetricWeb, sans-serif;
+  font-weight: 200;
+}
+
+.o-section-head__nav-item-toggler {
+  /* Equivalent o-typography mixin is: oTypographySans(s); */
+  font-size: 15px;
+  line-height: 17px;
+  font-family: MetricWeb, sans-serif;
+  font-weight: 200;
+}
+
+.o-section-head__nav-item {
+  /* Equivalent o-typography mixin is: oTypographySansBold(s); */
+  font-size: 15px;
+  line-height: 17px;
+  font-family: MetricWeb, sans-serif;
+  font-weight: 600;
+}

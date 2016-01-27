@@ -2,10 +2,6 @@
 @import "o-colors/main";
 @import "o-expander/main";
 @import "o-link-list/main";
-@import "o-typography/main";
-
-@include oFontsInclude(MetricWeb, $weight: light);
-@include oFontsInclude(MetricWeb, $weight: bold);
 
 @import "src/scss/color-use-cases";
 
@@ -26,10 +22,6 @@
   @include oGridColspan((default: 12, S: 12, M: 5));
 }
 
-.o-section-head__title {
-  @include oTypographySans(xl);
-}
-
 .o-section-head__nav-item-container {
   column-count: 2;
 }
@@ -39,7 +31,6 @@
 }
 
 .o-section-head__nav-item-toggler {
-  @include oTypographySans(s);
   width: 100%;
   display: block;
   text-align: left;

@@ -1,5 +1,6 @@
 {
 	"name": "o-section-head",
+	"supportStatus": "experimental",
 	"dependencies": {
 		"o-colors": "^3.0.0",
     "o-grid": "^4.0.0",

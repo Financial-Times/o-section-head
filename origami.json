@@ -16,7 +16,8 @@
       {
         "name": "standard",
         "description": "Standard section head",
-        "template": "demos/src/main.mustache"
+        "template": "demos/src/main.mustache",
+        "expanded": true
       }
     ]
 }

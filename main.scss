@@ -49,14 +49,17 @@
 }
 
 /* If JS hasn't loaded, never show the toggler */
-.core .o-section-head__nav-item-toggler {
+.o--if-no-js .o-section-head__nav-item-toggler {
   display: none;
 }
 
 @include oGridRespondTo($until: M) {
   /* If JS has loaded, set a max-height for o-expandable */
-  .enhanced .o-section-head__nav-item-list {
+  .o--if-js .o-section-head .o-expander__content {
     max-height: 0;
+  }
+  .o--if-js .o-section-head .o-expander__content--expanded {
+    max-height: none;
   }
 }
 

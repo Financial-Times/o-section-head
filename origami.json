@@ -5,7 +5,7 @@
     "support": "https://github.com/Financial-Times/o-section-head/issues",
     "supportStatus": "active",
     "ci": {
-      "circle": "https://api.travis-ci.org/repos/Financial-Times/o-section-head/builds.json"
+      "circle": "https://circleci.com/api/v1/project/Financial-Times/o-section-head"
     },
     "demosDefaults": {
       "sass": "demos/src/main.scss",

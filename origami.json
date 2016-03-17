@@ -1,24 +1,24 @@
 {
-    "description": "A section heading to sit between the Financial Times header and the page content, indicating a section",
-    "origamiType": "module",
-    "origamiVersion": 1,
-    "support": "https://github.com/Financial-Times/o-section-head/issues",
-    "supportStatus": "active",
-    "ci": {
-      "circle": "https://circleci.com/api/v1/project/Financial-Times/o-section-head"
-    },
-    "demosDefaults": {
-      "sass": "demos/src/main.scss",
-      "js": "demos/src/main.js",
-      "dependencies": "o-fonts@^2.1.0"
-    },
-    "demos": [
-      {
-        "name": "standard",
-        "description": "Standard section head",
-        "template": "demos/src/main.mustache",
-        "expanded": true,
-        "documentClasses": "enhanced"
-      }
-    ]
+	"description": "A section heading to sit between the Financial Times header and the page content, indicating a section",
+	"origamiType": "module",
+	"origamiVersion": 1,
+	"support": "https://github.com/Financial-Times/o-section-head/issues",
+	"supportStatus": "active",
+	"ci": {
+		"circle": "https://circleci.com/api/v1/project/Financial-Times/o-section-head"
+	},
+	"demosDefaults": {
+		"sass": "demos/src/main.scss",
+		"js": "demos/src/main.js",
+		"dependencies": "o-fonts@^2.1.0"
+	},
+	"demos": [
+		{
+		"name": "standard",
+		"description": "Standard section head",
+		"template": "demos/src/main.mustache",
+		"expanded": true,
+		"documentClasses": "enhanced"
+		}
+	]
 }

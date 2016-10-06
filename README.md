@@ -1,5 +1,7 @@
 # o-section-head [![Build Status](https://circleci.com/gh/Financial-Times/o-section-head.png?style=shield&circle-token=173a76098b2df69f3e5acb8359e74719fe684918)](https://circleci.com/gh/Financial-Times/o-section-head)
 
+**This module is deprecated**
+
 Typographic styles and layout for sub-headings. This module contains Sass for section title and a list of related links. This list of related links is optional, and uses o-expander to become collapsable at small screen widths.
 
 ## Markup

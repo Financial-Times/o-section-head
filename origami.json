@@ -15,11 +15,10 @@
 	},
 	"demos": [
 		{
-		"name": "standard",
-		"description": "Standard section head",
-		"template": "demos/src/main.mustache",
-		"expanded": true,
-		"documentClasses": "enhanced"
+			"name": "standard",
+			"description": "Standard section head",
+			"template": "demos/src/main.mustache",
+			"documentClasses": "enhanced"
 		}
 	]
 }
